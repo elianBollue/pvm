@@ -18,3 +18,4 @@ Release/
 **/.idea/tasks.xml
 *.class
 *.synctex.gz
+.vs
