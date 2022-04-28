@@ -8,7 +8,13 @@
 */
 unsigned length(linked_list* lst)
 {
-    
+    unsigned counter = 0;
+    auto anderelst = lst;
+    while (anderelst != nullptr) {
+        counter++;
+        anderelst = (*anderelst).next;
+    }
+    return counter;
 }
 
 /*
@@ -19,7 +25,20 @@ unsigned length(linked_list* lst)
 */
 linked_list* penultimate(linked_list* lst)
 {
-    
+    if (lst == nullptr || (*lst).next == nullptr) {
+        return nullptr;
+    }
+    else
+    {
+        linked_list* currentlist = lst;
+        linked_list* nextlist = (*lst).next;
+
+        while ((*nextlist).next != nullptr) {
+            nextlist = (*nextlist).next;
+            currentlist = (*currentlist).next;
+        }
+        return currentlist;
+    }
 }
 
 /*
@@ -32,7 +51,19 @@ linked_list* penultimate(linked_list* lst)
 */
 linked_list* longest(linked_list* xs, linked_list* ys)
 {
-    
+    auto p = xs, q = ys;
+
+    while (p != nullptr && q != nullptr) {
+        p = (*p).next;
+        q = (*q).next;
+    }
+    if (p == nullptr && q == nullptr) {
+        return nullptr;
+    }
+    else
+    {
+        return p != nullptr ? xs : ys;
+    }
 }
 
 /*
@@ -42,7 +73,12 @@ linked_list* longest(linked_list* xs, linked_list* ys)
 */
 void make_cyclic(linked_list* lst)
 {
-    
+    linked_list* first_node = lst;
+
+    while ((*lst).next != nullptr) {
+        lst = (*lst).next;
+    }
+    (*lst).next = first_node;
 }
 
 /*
@@ -55,5 +91,23 @@ void make_cyclic(linked_list* lst)
 */
 bool has_cycle(linked_list* lst)
 {
-    
+    if (lst == nullptr) {
+        return false;
+    }
+    else
+    {
+        linked_list* tortoise = lst;
+        linked_list* hare = (*lst).next;
+
+        while (tortoise != hare) {
+            if (hare == nullptr || (*hare).next == nullptr) {
+                return false;
+            }
+            else
+            {
+                tortoise = (*tortoise).next;
+                hare = (*(*hare).next).next;
+            }
+        }
+    }
 }

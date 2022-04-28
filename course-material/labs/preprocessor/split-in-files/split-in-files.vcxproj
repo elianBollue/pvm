@@ -20,6 +20,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="app.cpp" />
+    <ClCompile Include="bar.cpp" />
+    <ClCompile Include="baz.cpp" />
+    <ClCompile Include="foo.cpp" />
+    <ClCompile Include="qux.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bar.h" />
+    <ClInclude Include="baz.h" />
+    <ClInclude Include="foo.h" />
+    <ClInclude Include="qux.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C41687A2-434F-47A0-927E-344005466833}</ProjectGuid>
