@@ -18,9 +18,54 @@
     <ClCompile Include="tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="range\range.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="range\range-tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="split\split.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="split\split-tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="length\length.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="length\length-tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="veryquicksort\veryquicksort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="veryquicksort\veryquicksort-tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="most-frequent\most-frequent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="most-frequent\most-frequent-tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Catch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="range\range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="split\split.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="length\length.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="veryquicksort\veryquicksort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="most-frequent\most-frequent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
