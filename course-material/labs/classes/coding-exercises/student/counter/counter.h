@@ -6,8 +6,7 @@ class Counter
 	unsigned value;
 
 public:
-	Counter();
-	Counter(unsigned);
+	Counter(unsigned x = 0);
 
 	unsigned getValue() const;
 	void setValue(unsigned);

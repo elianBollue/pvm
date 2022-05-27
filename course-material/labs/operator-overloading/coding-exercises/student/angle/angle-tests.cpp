@@ -5,7 +5,7 @@
 
 // Remove the /*, thereby uncommenting the tests one by one
 
-/*
+
 TEST_CASE("Angle creation with from_radians")
 {
 	const Angle angle = Angle::from_radians(2);
@@ -13,7 +13,7 @@ TEST_CASE("Angle creation with from_radians")
 	CHECK(angle.radians() == Approx(2.0));
 	CHECK(angle.degrees() == Approx(2.0 * 180.0 / 3.141592));
 }
-/*
+
 TEST_CASE("Angle creation with from_degrees")
 {
 	const Angle angle = Angle::from_degrees(180);
@@ -21,35 +21,35 @@ TEST_CASE("Angle creation with from_degrees")
 	CHECK(angle.radians() == Approx(3.141592));
 	CHECK(angle.degrees() == Approx(180));
 }
-/*
+
 TEST_CASE("Angle creation using int_rad literal")
 {
 	const Angle angle = 5_rad;
 
 	CHECK(angle.radians() == Approx(5));
 }
-/*
+
 TEST_CASE("Angle creation using int_degrees literal")
 {
 	const Angle angle = 45_degrees;
 
 	CHECK(angle.degrees() == Approx(45));
 }
-/*
+
 TEST_CASE("Angle creation using double_rad literal")
 {
 	const Angle angle = 5.2_rad;
 
 	CHECK(angle.radians() == Approx(5.2));
 }
-/*
+
 TEST_CASE("Angle creation using double_degrees literal")
 {
 	const Angle angle = 45.8_degrees;
 
 	CHECK(angle.degrees() == Approx(45.8));
 }
-/*
+
 TEST_CASE("Angle = Angle")
 {
 	Angle x = 50_degrees;
@@ -60,7 +60,7 @@ TEST_CASE("Angle = Angle")
 	CHECK(x.degrees() == Approx(30));
 	CHECK(y.degrees() == Approx(30));
 }
-/*
+
 TEST_CASE("Angle + Angle")
 {
 	const Angle x = 25_degrees;

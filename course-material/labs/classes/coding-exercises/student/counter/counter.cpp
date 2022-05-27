@@ -1,7 +1,5 @@
 #include "counter.h"
 
-Counter::Counter() : Counter(0){}
-
 Counter::Counter(unsigned value) : value(value){}
 
 unsigned Counter::getValue() const {
